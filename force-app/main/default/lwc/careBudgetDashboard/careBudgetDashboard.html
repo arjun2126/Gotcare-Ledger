@@ -1,0 +1,75 @@
+<template>
+    <lightning-card
+        title="Person-Directed Care Budget"
+        icon-name="standard:currency"
+    >
+        <div class="slds-p-around_medium">
+            <template if:true={plan}>
+                <div class="slds-grid slds-wrap slds-gutters">
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3">
+                        <div class="metric-card">
+                            <div class="metric-label">Total Allocation</div>
+                            <div class="metric-value">
+                                <lightning-formatted-number
+                                    value={plan.Total_Allocation__c}
+                                    format-style="currency"
+                                    currency-code="CAD"
+                                >
+                                </lightning-formatted-number>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3">
+                        <div class="metric-card">
+                            <div class="metric-label">Total Spent</div>
+                            <div class="metric-value spent">
+                                <lightning-formatted-number
+                                    value={plan.Total_Spent__c}
+                                    format-style="currency"
+                                    currency-code="CAD"
+                                >
+                                </lightning-formatted-number>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3">
+                        <div class="metric-card">
+                            <div class="metric-label">Remaining Balance</div>
+                            <div class="metric-value remaining">
+                                <lightning-formatted-number
+                                    value={remainingBalance}
+                                    format-style="currency"
+                                    currency-code="CAD"
+                                >
+                                </lightning-formatted-number>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+
+            <div class="slds-m-top_large">
+                <h2 class="slds-text-heading_medium slds-m-bottom_small">
+                    Submitted Claims
+                </h2>
+
+                <template if:true={claims}>
+                    <lightning-datatable
+                        key-field="Id"
+                        data={claims}
+                        columns={columns}
+                        onrowaction={handleRowAction}
+                        hide-checkbox-column
+                    >
+                    </lightning-datatable>
+                </template>
+
+                <template if:false={claims}>
+                    <p>No submitted claims found.</p>
+                </template>
+            </div>
+        </div>
+    </lightning-card>
+</template>
