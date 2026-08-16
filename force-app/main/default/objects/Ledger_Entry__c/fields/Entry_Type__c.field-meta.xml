@@ -11,9 +11,14 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Allocation Credit</fullName>
+                <fullName>Authorization Hold</fullName>
                 <default>false</default>
-                <label>Allocation Credit</label>
+                <label>Authorization Hold</label>
+            </value>
+            <value>
+                <fullName>Claim Approval</fullName>
+                <default>false</default>
+                <label>Claim Approval</label>
             </value>
             <value>
                 <fullName>Claim Debit</fullName>
@@ -21,9 +26,14 @@
                 <label>Claim Debit</label>
             </value>
             <value>
-                <fullName>Adjustment</fullName>
+                <fullName>Payment Disbursement</fullName>
                 <default>false</default>
-                <label>Adjustment</label>
+                <label>Payment Disbursement</label>
+            </value>
+            <value>
+                <fullName>Manual Adjustment</fullName>
+                <default>false</default>
+                <label>Manual Adjustment</label>
             </value>
             <value>
                 <fullName>Reversal</fullName>

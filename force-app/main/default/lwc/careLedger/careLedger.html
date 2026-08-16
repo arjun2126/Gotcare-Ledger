@@ -1,0 +1,36 @@
+<template>
+    <lightning-card
+        title="Care Ledger"
+        icon-name="standard:orders"
+    >
+        <template if:true={isLoading}>
+            <lightning-spinner
+                alternative-text="Processing claim"
+            ></lightning-spinner>
+        </template>
+
+        <div class="slds-p-around_medium">
+            <template if:true={error}>
+                <div
+                    class="slds-text-color_error slds-m-bottom_medium"
+                >
+                    {error}
+                </div>
+            </template>
+
+            <template if:true={claims.length}>
+                <lightning-datatable
+                    key-field="Id"
+                    data={claims}
+                    columns={columns}
+                    hide-checkbox-column
+                    onrowaction={handleRowAction}
+                ></lightning-datatable>
+            </template>
+
+            <template if:false={claims.length}>
+                <p>No submitted claims require approval.</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
