@@ -1,12 +1,16 @@
 # Gotcare Care Ledger
 
-A Salesforce prototype for person-directed care funding, claim approval, budget validation, and financial auditability.
+This is a Salesforce prototype I built to handle person-directed care funding. It manages the full flow from care planning through claim approvals and keeps a complete audit trail of all spending.
 
-This prototype models that workflow using Salesforce custom objects, Apex, and Lightning Web Components.
+I'm using Salesforce's custom objects for the data model, wrote some Apex for the business logic, and built Lightning Web Components for the UI.
 
-## Data model
+## How the data is structured
 
+Each Care Plan can have multiple Funding Allocations, and each allocation can track individual Care Claims. Everything gets logged in a Ledger Entry so we always know where the money went.
+
+```
 Care Plan
     └── Funding Allocation
             ├── Care Claim
             └── Ledger Entry
+```

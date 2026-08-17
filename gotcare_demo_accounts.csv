@@ -1,0 +1,9 @@
+Name,Type,Industry,Phone,Website,BillingCity,BillingState,BillingCountry,Description
+Harborview Family Support,Customer,Healthcare Services,555-0101,https://example.com/harborview,Toronto,ON,Canada,Fictional client account for GotCare demonstration.
+BrightPath Independent Living,Customer,Community Care,555-0102,https://example.com/brightpath,Ottawa,ON,Canada,Fictional client account for GotCare demonstration.
+Cedar Grove Wellness,Customer,Healthcare Services,555-0103,https://example.com/cedargrove,Mississauga,ON,Canada,Fictional client account for GotCare demonstration.
+Lakeside Community Services,Customer,Social Services,555-0104,https://example.com/lakeside,Hamilton,ON,Canada,Fictional client account for GotCare demonstration.
+Evergreen Supported Living,Customer,Community Care,555-0105,https://example.com/evergreen,Markham,ON,Canada,Fictional client account for GotCare demonstration.
+Northstar Home Care,Customer,Home Care,555-0106,https://example.com/northstar,Vaughan,ON,Canada,Fictional client account for GotCare demonstration.
+Riverside Support Client,Customer,Social Services,555-0107,https://example.com/riverside,Brampton,ON,Canada,Fictional client account for GotCare demonstration.
+Maple Community Care,Customer,Community Care,555-0108,https://example.com/maple,London,ON,Canada,Fictional client account for GotCare demonstration.

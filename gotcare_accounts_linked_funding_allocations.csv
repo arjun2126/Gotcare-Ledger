@@ -1,0 +1,14 @@
+Care_Plan_Client_Account_Name,Category__c,Allocated_Amount__c,Committed_Amount__c,Spent_Amount__c
+Harborview Family Support,Personal Support,8000,0,0
+Harborview Family Support,Transportation,4000,0,0
+Harborview Family Support,Community Access,3000,0,0
+BrightPath Independent Living,Personal Support,5000,0,0
+BrightPath Independent Living,Respite Care,4000,0,0
+Cedar Grove Wellness,Personal Support,10000,0,0
+Cedar Grove Wellness,Therapy Support,6000,0,0
+Cedar Grove Wellness,Transportation,4000,0,0
+Lakeside Community Services,Community Access,7500,0,0
+Lakeside Community Services,Personal Support,5000,0,0
+Evergreen Supported Living,Personal Support,9000,0,0
+Evergreen Supported Living,Respite Care,5000,0,0
+Evergreen Supported Living,Transportation,4000,0,0

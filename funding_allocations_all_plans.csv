@@ -1,0 +1,13 @@
+Care_Plan__c,Category__c,Allocated_Amount__c,Committed_Amount__c,Spent_Amount__c
+CP-0003,Personal Support,10000,0,0
+CP-0003,Transportation,4000,0,0
+CP-0004,Personal Support,8000,0,0
+CP-0004,Transportation,4000,0,0
+CP-0004,Community Access,3000,0,0
+CP-0005,Personal Support,5000,0,0
+CP-0005,Respite Care,4000,0,0
+CP-0006,Community Access,7500,0,0
+CP-0006,Personal Support,5000,0,0
+CP-0007,Personal Support,9000,0,0
+CP-0007,Respite Care,5000,0,0
+CP-0007,Transportation,4000,0,0
